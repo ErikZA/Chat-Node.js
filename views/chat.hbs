@@ -1,0 +1,60 @@
+<link rel='stylesheet' href='/stylesheets/styleIndex.css' />
+<script src="/javascripts/loadUsers.js">
+</script>
+<script src="/javascripts/loadChat.js">
+</script>
+
+
+
+
+    <div class="container-fluid" id="body">
+        <div class="row content">
+            <div class="col-sm-3 sidenav">
+                <h4 id="h4User" name='h4User'><img id="imgUser" src="/images/caricatura.jpg" alt="ImagenUser">{{nameUser}}</h4>
+
+                <div id="btn1" class="input-group">
+                    <input type="text" id="searchUser" class="form-control" placeholder="Search User.." name="searchUser">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" onclick="loadUsers()">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+                <div id="divList">
+                    <ul id="listPeople" class="nav nav-pills nav-stacked">
+                        <li id="people"></li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+                <h4><small>RECENT POSTS</small></h4>
+                <div class="form-group" id="chatDiv">
+                    <ul id="chatMsg">
+                        <li id="chatLogin">
+                            <p>Login...</p>
+                        </li>
+                    </ul>
+                </div>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3" name='txtMsg' id='txtMsg'></textarea>
+                    </div>
+                </form>
+                    <button  onclick="setChat()" id="btnSubmit" class="btn btn-success" name="btnSubmit">Submit</button>
+                <br>
+                <br>
+                <form action="/exit" method="POST">
+                    <button id="btnExit" type="submit" class="btn btn-danger" name="btnExit">EXIT SISTEM</button>
+                </form>
+                <br><br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="container-fluid">
+        <h5>Developer Erik Zambeli Student at Universidade Tecnologica Federal do Paraná - Bachelor of Software Engineering</h5>
+    </footer>
+
+    </html>

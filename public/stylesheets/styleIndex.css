@@ -1,0 +1,98 @@
+#imgUser{
+ width: 33%;
+ height: 33%;
+ margin-right:4%;
+ margin-bottom: 8%;     
+}
+
+#h4User{
+    margin-bottom: 8%; 
+}
+
+.row.content {
+    height: 100% !important;
+}
+.sidenav{
+    background-color: #A9ABAB !important;
+}
+/*
+div{
+    display: grid !important;
+}*/
+ul{
+    padding-right: 0px !important;
+    padding-left: 0px !important;    
+}
+
+#listPeople{
+    cursor: pointer;
+}
+
+#btn1{
+    border-bottom:solid 2px lightgray;
+    padding-bottom: 4%;
+}
+li{
+    border-bottom:solid 2px lightgray;
+    padding-right: 0px !important;
+    padding-left: 0px !important;   
+}
+#chatMsg li{
+    border-radius: 4px;
+    background-color: #fff;  
+    width: 40%; 
+    margin-bottom: 1%;
+    margin-left: 1%;
+    list-style: none;
+    font-size: 14px;
+}
+
+.listColor{
+    background-color: #5f5f5f;
+}
+
+#chatMsg p{
+    font-size: 10px;
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
+}
+
+
+a:-webkit-any-houver{
+   background-color: black; 
+}
+
+#chatDiv{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    background-image: url(../images/fundo.jpg);
+    image-rendering: auto;
+    display: block;
+    max-width:100%;
+    height: 431.73438px;
+    padding-top:1%;
+    overflow:auto;  
+}
+    .row.content {
+            height: 1500px
+        }
+   .sidenav {
+            background-color: #f1f1f1;
+            height: 100%;
+        }
+    footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+    @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+            .row.content {
+                height: auto;
+            }
+        }

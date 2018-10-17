@@ -1,0 +1,35 @@
+    <link rel='stylesheet' href='/stylesheets/styleLogin.css'/>
+    <div class="container-fluid">
+        <div id="log" class="col-sm-6">
+            <form id="formLogin" action="/loginChat" method="POST">
+                Name:<br>
+                <input id="nameLogin" type="text" name="nameLog"><br>
+                 Last Name:<br>
+                <input id="lastNameLogin" type="text" name="firstnameLog"><br>
+                Password:<br>
+                <input id="passwordLogin" type="password" name="PasswordLog"><br>
+                <p>{{senhaLog}}</p><br>
+                <input type="submit" class="btn btn-primary btn-md" name="Login" id="btn1" value="Submit">
+            </form>
+            <h4>{{sucess}}</h4>
+        </div>
+
+        <div id="cad" class="col-sm-6">
+            <form id="formCad" action="/new" method="POST">
+                Name:<br>
+                <input id="nameCad" type="text" name="nameCad"><br>
+                Last Name:<br>
+                <input id="lastNameCad" type="text" name="firstnameCad"><br>
+                Password:<br>
+                <input id="passwordCad" type="password" name="PasswordCad"><br>
+                Confirmed Password:<br>
+                <input id="confirmedCad" type="password" name="confirmedPasswordCad"><br>
+                <p>{{senha}}</p><br>
+                <input type="submit" class="btn btn-primary btn-md" name="Submit" id="btn2" value="Submit"><br>
+            </form>
+        </div>
+
+      </div>
+      <footer class="container-fluid">
+        <h5>Developer Erik Zambeli Student at Universidade Tecnologica Federal do Paraná - Bachelor of Software Engineering</h5>
+    </footer>
