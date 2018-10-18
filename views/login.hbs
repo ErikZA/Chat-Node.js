@@ -1,4 +1,7 @@
+    
     <link rel='stylesheet' href='/stylesheets/styleLogin.css'/>
+    <script src="/javascripts/block.js"></script>
+
     <div class="container-fluid">
         <div id="log" class="col-sm-6">
             <form id="formLogin" action="/loginChat" method="POST">
@@ -12,6 +15,9 @@
                 <input type="submit" class="btn btn-primary btn-md" name="Login" id="btn1" value="Submit">
             </form>
             <h4>{{sucess}}</h4>
+            <p id="msgAviso" style="display:none;">
+                 <span>Não é permitido voltar pelo botão do browser.</span>
+            </p>
         </div>
 
         <div id="cad" class="col-sm-6">
