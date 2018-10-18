@@ -1,8 +1,8 @@
-var mongoClient = require('mongodb').MongoClient;
-mongoClient.connect('mongodb://erik:erik1234@ds251245.mlab.com:51245/chat-data', { useNewUrlParser: true },
+var mongoClient = require('mongodb').MongoClient; //mongodb://erik:a123456@ds251245.mlab.com:51245/chat-data  [ds135433.mlab.com:35433]
+mongoClient.connect("mongodb://erik:erik123@ds135433.mlab.com:35433/chatdb",
     function (err, conn) {
-        if (err) return console.log('Não conectou ao banco' + err);
-        global.db = conn.db('chatIndividual');
+        if (err) return console.log('Não conectou ao banco\n' + err);
+        global.db = conn.db('chatdb');
     });
 
 function saveUser(name, lastName, passWord, callback) {
